@@ -102,7 +102,7 @@ src
 
 - **Translataion**: `i18next` for internationalization is set up. You can define own internationalization package in `src/lib/translation/Translation.ts`. `init()` function is called in `src/App.tsx` to initialize the translation package. `useTranslate` hook is available to use in components. You can customize the translation package as per your requirements and `useTranslate` hook.
 
-- **Chakra UI**: Chakra UI for styling components. You can define your own theme in `src/lib/ui/theme`. You can use Chakra UI components in `src/lib/ui/elements` and `src/lib/ui/forms`. Elements wrapped from Chakra UI components are available in `src/lib/ui/elements` and form components are available in `src/lib/ui/forms`.
+- **Chakra UI**: Chakra UI for styling components. You can define your own theme in `src/lib/ui/theme`. You can use Chakra UI components in `src/lib/ui/elements` and `src/lib/ui/forms`. Elements wrapped from Chakra UI components are available in `src/lib/ui/elements` and form components are available in `src/lib/ui/forms`. 
 
 - **React Query**: Coming Soon  
 
