@@ -4,9 +4,9 @@ The core layer is the heart of the application. It contains the business logic a
 
 ### Example
 
-- src/core/entities
-  - src/core/entities/user
-  - src/core/entities/post
+- src/core/domain
+  - src/core/domain/user
+  - src/core/domain/post
 
 - src/core/use-cases
     - src/core/use-cases/user
