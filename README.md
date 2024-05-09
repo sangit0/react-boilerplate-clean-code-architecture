@@ -94,3 +94,20 @@ src
 - **Consistent Code Style**: Use a consistent code style throughout your codebase for better readability and maintainability.
 
 
+## Features
+
+- **Routing**: React Router for declarative routing. Define routes in `src/routes/routes-path.ts`. From there, the routes are imported into `src/routes/index.tsx` and rendered in `src/App.tsx`. You will be able to access the routes path string using `RoutesPath.<RouteName>`.
+
+- **State Management**: Zustand for global state management. Define stores in `src/store`.
+
+- **Translataion**: `i18next` for internationalization is set up. You can define own internationalization package in `src/lib/translation/Translation.ts`. `init()` function is called in `src/App.tsx` to initialize the translation package. `useTranslate` hook is available to use in components. You can customize the translation package as per your requirements and `useTranslate` hook.
+
+- **Chakra UI**: Chakra UI for styling components. You can define your own theme in `src/lib/ui/theme`. You can use Chakra UI components in `src/lib/ui/elements` and `src/lib/ui/forms`. Elements wrapped from Chakra UI components are available in `src/lib/ui/elements` and form components are available in `src/lib/ui/forms`.
+
+- **React Query**: Coming Soon  
+
+- **React Hook Form**: Coming Soon with Chakara UI form components.
+
+
+
+
