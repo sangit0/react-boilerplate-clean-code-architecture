@@ -37,12 +37,13 @@ src
 ├── core // Application Layer
 │   ├── use-cases
 │   ├── entities
-├── components // Reusable Components
-    |── elements
+├── lib // Third Party Libraries
+    |── ui
+        |── elements
         |── Button
-    |── forms
-    |── utils
-    |── providers 
+        |── forms
+        |── utils
+        |── providers 
 ├── pages // Presentation Layer
     |── Home
     |── About
