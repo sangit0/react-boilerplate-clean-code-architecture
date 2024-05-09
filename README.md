@@ -20,6 +20,8 @@ This boilerplate provides a structured foundation for React projects, adhering t
 
 Clean Architecture segregates the codebase into layers, each with distinct responsibilities. This separation of concerns simplifies maintenance, testing, and scaling. The core principle is to keep business logic independent of the presentation and infrastructure layers, allowing changes in implementation without affecting other layers.
 
+ Read more about Clean Architecture [here](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html).
+
 ## Clean Architecture Layers
 
 - **Presentation**: Handles UI rendering. Contains components, pages, and styles. Depends on external libraries like React, Chakra UI, etc.
@@ -52,6 +54,70 @@ src
 ├── store // Zustand Store
 
 ```
+
+## Project Structure Overview
+
+- **Assets**: Contains static assets like images, fonts, etc.
+    ```
+    src
+    |── assets
+    |   ├── images
+    |   ├── icons
+    |   ├── fonts
+    ```
+- **Adapters**: Infrastructure layer that interacts with external services. Includes API calls, local storage, etc.
+    ```
+    src
+    |── adapters
+    |   ├── api
+    |       ├── client
+    |       ├── graphql   
+    |   ├── storage
+    |       ├── localStorage
+    |       ├── sessionStorage
+    ```
+- **Core**: Application layer that contains the business logic. Includes use cases and domain logic.
+    ```
+    src
+    |── core
+    |   ├── domain
+    |       ├── user
+    |       ├── post
+    |   ├── use-cases
+    |       ├── user
+    |           ├── createUser
+    |           ├── getUser
+    |           ├── updateUser
+    |       ├── post
+    ```
+- **Lib**: Contains third-party libraries and utilities.
+    ```
+    src
+    |── lib
+    |   ├── ui
+    |       ├── elements
+    |           ├── Button
+    |           ├── Input
+    |       ├── forms
+    |           ├── Form
+    |           ├── Field
+    |       ├── utils
+    |           ├── useBreakpointValue
+    |           ├── useDebounce
+    |       ├── providers
+    |           ├── ThemeProvider
+    |           ├── QueryClientProvider
+    ```
+- **Pages**: Presentation layer that contains components and pages. Each page represents a route in the application.
+    ```
+    src
+    |── pages
+    |   ├── Home
+    |   ├── About
+    |   ├── Contact
+    ```
+- **Routes**: Contains route definitions. Each route is mapped to a component in the `pages` directory.
+- **Store**: Zustand store for global state management. Define stores in this directory.        
 
 ## Best Practices
 
