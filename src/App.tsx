@@ -1,16 +1,19 @@
 import {
   QueryProvider,
   useGetQueryClient,
-} from './lib/ui/providers/QueryProvider';
+} from '~/lib/ui/providers/QueryProvider';
 import { AppRoutes } from './routes';
+import { ThemeProvider } from '~/lib/ui/providers/ThemeProvider';
 
 const App = () => {
   const queryClient = useGetQueryClient();
 
   return (
-    <QueryProvider client={queryClient}>
-      <AppRoutes />
-    </QueryProvider>
+    <ThemeProvider>
+      <QueryProvider client={queryClient}>
+        <AppRoutes />
+      </QueryProvider>
+    </ThemeProvider>
   );
 };
 
