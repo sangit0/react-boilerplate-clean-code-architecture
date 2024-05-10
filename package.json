@@ -15,7 +15,7 @@
 	"version": "1.0.0",
 	"type": "module",
 	"scripts": {
-		"setup": "git init && husky install && npx playwright install",
+		"postinstall": "husky install",
 		"format": "prettier src/**/*.{ts,tsx} --write",
 		"lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 		"lint:fix": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",

@@ -185,10 +185,9 @@ src
 git clone <repo-url>
 ```
 
-2. Install dependencies and set up the project:
+2. Install dependencies:
 
 ```bash
-pnpm setup
 pnpm install
 ```
 
@@ -213,6 +212,8 @@ pnpm storybook
 Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
 
 ## Linting and Formatting
+
+Husky is set up to run linting and formatting checks before committing code. This ensures that the codebase follows consistent coding standards. But you can also run these checks manually.
 
 ESLint and Prettier are set up to enforce code quality and formatting rules. You can run linting and formatting checks using the following commands:
 
