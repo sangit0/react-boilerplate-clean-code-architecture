@@ -177,3 +177,76 @@ src
 
 
 
+## Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone <repo-url>
+```
+
+2. Install dependencies and set up the project:
+
+```bash
+pnpm setup
+pnpm install
+```
+
+3. Start the development server:
+
+```bash
+pnpm start
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## Storybook Integration
+
+Storybook is a tool for developing UI components in isolation. It helps you build components and present them interactively with different states.
+
+To start Storybook, run:
+
+```bash
+pnpm storybook
+```
+
+Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
+
+## Linting and Formatting
+
+ESLint and Prettier are set up to enforce code quality and formatting rules. You can run linting and formatting checks using the following commands:
+
+```bash
+pnpm lint
+```
+
+```bash
+pnpm format
+```
+
+## Commit Guidelines
+
+This project uses Commit Lint to enforce commit message conventions. Commit messages should follow the conventional commit format:
+
+```bash
+<type>(<scope>): <subject>
+```
+
+Where `<type>` is one of the following:
+
+- `feat`: A new feature
+- `fix`: A bug fix
+- `docs`: Documentation changes
+- `style`: Code style changes
+- `refactor`: Code refactoring
+- `test`: Test cases
+- `chore`: Other changes
+
+`<scope>` is optional and can be anything specifying the location of the commit change.
+
+`<subject>` is a brief description of the change.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
