@@ -50,3 +50,5 @@ Thumbs.db
 yarn.lock
 
 /dev-dist
+
+storybook-static

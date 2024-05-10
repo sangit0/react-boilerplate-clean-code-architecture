@@ -1,34 +1,38 @@
 import type { DeepPartial, Theme } from '@chakra-ui/react';
 
+type ExtraShades = {
+  0: string;
+  1000: string;
+};
+
 /** extend additional color here */
 const extendedColors: DeepPartial<
-  Record<string, Theme['colors']['blackAlpha'] & { 0: string; 1000: string }>
+  Record<string, Theme['colors']['blackAlpha'] & ExtraShades>
 > = {
   primary: {
-    0: '#F9F7FE',
-    100: '#EEEBFE',
-    200: '#DBD6FC',
-    300: '#C7BEFB',
-    400: '#B0A2FA',
-    500: '#886DF8',
-    600: '#8268ED',
-    700: '#745DD4',
-    800: '#6451B7',
-    900: '#524296',
-    1000: '#3E2E73',
+    0: '#F2F9F5',
+    100: '#E7F4ED',
+    200: '#CCE8DA',
+    300: '#ACDCC4',
+    400: '#86CEAD',
+    500: '#10B981',
+    600: '#0FB07B',
+    700: '#0E9E6E',
+    800: '#0C895F',
+    900: '#0A704E',
   },
   secondary: {
-    0: '#F4FEFA',
-    100: '#EBFDF7',
-    200: '#D6FBEE',
-    300: '#BEF9E5',
-    400: '#A2F6DC',
-    500: '#6DF3CD',
-    600: '#68E8C4',
-    700: '#5DCFAF',
-    800: '#51B497',
-    900: '#42937C',
-    1000: '#2F6857',
+    0: '#F7FAFF',
+    100: '#EEF3FF',
+    200: '#D7E0FF',
+    300: '#BFCBFF',
+    400: '#A3B3FF',
+    500: '#6C84FF',
+    600: '#667DF5',
+    700: '#566CCF',
+    800: '#4658A5',
+    900: '#36477A',
+    1000: '#273256',
   },
   pink: {
     0: '#FFF4F8',

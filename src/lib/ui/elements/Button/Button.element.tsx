@@ -1,5 +1,5 @@
 import { ButtonProps, Button as ChakraButton } from '@chakra-ui/react';
-import { useTranslate } from '~/lib/translation';
+import { useTranslate } from '~/lib/translation/useTranslate';
 
 type ButtonElementProps = {
   dontTranslate?: boolean;

@@ -7,7 +7,7 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowJs": true,
-    
+
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
@@ -15,10 +15,9 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
-      "~/*": ["./*"],
+      "~/*": ["src/*"],
     },
 
     /* Linting */
