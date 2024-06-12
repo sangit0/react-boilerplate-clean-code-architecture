@@ -5,7 +5,7 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/sangit0/react-starter-kit-chakra">
+  <a href="https://github.com/sangit0/react-boilerplate-clean-code-architecture">
     <img src="docs/images/app.svg" alt="Logo" width="80" height="80">
   </a>
 
@@ -56,7 +56,7 @@ services._
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/sangit0/react-starter-kit-chakra.git
+   git clone https://github.com/sangit0/react-boilerplate-clean-code-architecture.git
    ```
 2. Install NPM packages
    ```sh
@@ -333,16 +333,16 @@ This project is licensed under the MIT License.
 [contributors-shield]:
   https://img.shields.io/github/contributors/sangit0/react-starter-kit-chakra?style=for-the-badge
 [contributors-url]:
-  https://github.com/sangit0/react-starter-kit-chakra/graphs/contributors
+  https://github.com/sangit0/react-boilerplate-clean-code-architecture/graphs/contributors
 [forks-shield]:
   https://img.shields.io/github/forks/sangit0/react-starter-kit-chakra?style=for-the-badge
-[forks-url]: https://github.com/sangit0/react-starter-kit-chakra/fork
+[forks-url]: https://github.com/sangit0/react-boilerplate-clean-code-architecture/fork
 [stars-shield]:
   https://img.shields.io/github/stars/sangit0/react-starter-kit-chakra?style=for-the-badge
-[stars-url]: https://github.com/sangit0/react-starter-kit-chakra/stargazers
+[stars-url]: https://github.com/sangit0/react-boilerplate-clean-code-architecture/stargazers
 [issues-shield]:
   https://img.shields.io/github/issues/sangit0/react-starter-kit-chakra?style=for-the-badge
-[issues-url]: https://github.com/sangit0/react-starter-kit-chakra/issues
+[issues-url]: https://github.com/sangit0/react-boilerplate-clean-code-architecture/issues
 [license-shield]:
   https://img.shields.io/github/license/sangit0/react-starter-kit-chakra?style=for-the-badge
 [ReactRouter]:
