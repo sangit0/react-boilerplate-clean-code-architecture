@@ -5,22 +5,24 @@ import {
 import { AppRoutes } from './routes';
 import { ThemeProvider } from '~/lib/ui/providers/ThemeProvider';
 import { Translation } from '~/lib/translation/Translation';
-
-const translation = new Translation();
+import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
-  // get query client
-  const queryClient = useGetQueryClient();
-
-  // initialize translation
+  /** initialize translation */
+  const translation = new Translation();
   translation.init();
 
+  /** get query client */
+  const queryClient = useGetQueryClient();
+
   return (
-    <ThemeProvider>
-      <QueryProvider client={queryClient}>
-        <AppRoutes />
-      </QueryProvider>
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider>
+        <QueryProvider client={queryClient}>
+          <AppRoutes />
+        </QueryProvider>
+      </ThemeProvider>
+    </BrowserRouter>
   );
 };
 

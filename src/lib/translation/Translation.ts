@@ -2,13 +2,16 @@ import { i18nInit } from './i18n';
 import { ITranslation } from './translation.interface';
 
 /**
- * Will be used to initialize the translation
- * App.tsx will use this to initialize the translation
+ * The Translation class is responsible for initializing the translation functionality.
+ * It is utilized within App.tsx to set up the translation.
  * @class Translation
  * @implements ITranslation
- * @returns void
  */
 export class Translation implements ITranslation {
+  /**
+   * Initializes the translation functionality by invoking the i18nInit function.
+   * @returns void
+   */
   public init(): void {
     i18nInit();
   }

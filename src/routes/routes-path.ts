@@ -15,7 +15,7 @@ const UIRoutes = {
   home: {
     name: 'navigation.home',
     path: '/',
-    component: lazyLoad(() => import('../pages/Home')),
+    component: lazyLoad(() => import('../pages/home/Home')),
   },
 };
 

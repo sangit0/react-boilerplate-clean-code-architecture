@@ -7,10 +7,8 @@ import { ApiErr } from './types';
  * @returns
  */
 export function parseErrorMessage(data: ApiErr, response: Response) {
-  const result = {
+  return {
     status: data.code || response.status,
     message: data.message || response.statusText,
   };
-
-  return result;
 }

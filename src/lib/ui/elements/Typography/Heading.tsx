@@ -9,6 +9,7 @@ type HeadingProps = { dontTranslate?: boolean } & HeadingChakraProps;
 /**
  * Display heading element
  * @param children Heading content
+ * @param dontTranslate
  * @param rest Other heading properties
  * @returns JSX.Element
  */
